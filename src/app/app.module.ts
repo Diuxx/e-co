@@ -2,16 +2,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './_routing/app-routing.module';
 import { AppComponent } from './app.component';
 
 // primeng modules
 import { AccordionModule } from 'primeng/accordion';     //accordion and accordion tab
-import { MenuItem } from 'primeng/api';                  //api
+import { MenuItem } from 'primeng/api';                  //api3
+
+// components
+import { NotFoundComponent } from './_components/not-found/not-found.component';
+import { HomeComponent } from './_components/home/home.component';
+import { PathResolveService } from './_services/pathResolve.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +26,7 @@ import { MenuItem } from 'primeng/api';                  //api
     AppRoutingModule,
     AccordionModule
   ],
-  providers: [],
+  providers: [PathResolveService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
