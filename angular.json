@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/fonts.scss",
               "src/styles.scss",
               "node_modules/primeicons/primeicons.css",
               "node_modules/primeng/resources/themes/nova-light/theme.css",
