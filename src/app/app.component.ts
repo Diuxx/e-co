@@ -15,23 +15,19 @@ export class AppComponent implements OnInit {
   // variables
   title = 'e-co-angular';
 
-  // ceo: meta
-  private meta: Meta;
-
-  constructor(public translate: TranslateService) {
+  constructor(
+    public translate: TranslateService,
+    private meta: Meta // ceo: meta
+    ) {
+    // https://www.digitalocean.com/community/tutorials/angular-meta-tags
+    this.meta.addTag({
+      name: 'Description',
+      content: 'e-co est un template d\'application ecommerce développé avec angular 9. testez les possibilités en terme d\'ecommerce avec angular dès maintenant!'
+    });
     this.manageLang();
   }
 
   ngOnInit() {
-    /*this.meta.addTag({
-      name: 'angular.ganatan',
-      content: 'danny ganatan'
-    });
-    this.meta.updateTag({
-      name: 'description',
-      content: 'Cette application a été développée avec Angular version 9.1.7 et bootstrap 4.5.0' +
-        ' Elle applique le Routing, le Lazy loading, le Server side rendering et les Progressive Web App (PWA)'
-    });*/
   }
 
   /**
@@ -44,12 +40,12 @@ export class AppComponent implements OnInit {
   }
 
   /**
+   * https://www.positronx.io/angular-internationalization-i18n-with-ngx-translate-tutorial/
    * manage application current langage
    */
   private manageLang(): void {
-    this.translate.addLangs(['en', 'fr']);  // lang list
-    // get local stored lang id
-    let lang = localStorage.getItem('lang');
+    this.translate.addLangs(['en', 'fr']);   // lang list
+    let lang = localStorage.getItem('lang'); // get local stored lang id
     if(lang != null)
     {
       this.translate.setDefaultLang(lang);
