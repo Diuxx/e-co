@@ -1,0 +1,8 @@
+{
+    "not-found": {
+        "notfound-header": "Oops! Page Introuvable",
+        "notfound-message": "Désolé mais la page que vous recherchez n'existe pas. Elle peut-être été supprimée, modifié ou est temporairement indisponible",
+        "notfound-back": "Retour à la page d'accueil"
+    },
+    "notfound-header": "Oops! Page Introuvable"
+}
