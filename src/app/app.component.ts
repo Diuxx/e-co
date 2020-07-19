@@ -14,11 +14,10 @@ export class AppComponent implements OnInit {
   // ceo: meta
   private meta: Meta;
 
-  constructor()
-  {}
+  constructor() {}
 
   ngOnInit() {
-    this.meta.addTag({
+    /*this.meta.addTag({
       name: 'angular.ganatan',
       content: 'danny ganatan'
     });
@@ -26,6 +25,6 @@ export class AppComponent implements OnInit {
       name: 'description',
       content: 'Cette application a été développée avec Angular version 9.1.7 et bootstrap 4.5.0' +
         ' Elle applique le Routing, le Lazy loading, le Server side rendering et les Progressive Web App (PWA)'
-    });
+    });*/
   }
 }

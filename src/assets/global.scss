@@ -1,0 +1,31 @@
+// global scss
+@import 'colors.scss';
+
+/** app variables */
+
+$app-background-color: $white;
+
+/** grid variables */
+
+$grid-min-height: 100vh;
+
+/** fonts */
+@font-face {
+    font-family: 'Nunito-regular';
+    src: '/fonts/nunito/Nunito-Regular.ttf' format('truetype');
+}
+
+/** html region */
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+/** container region */
+.container {
+    min-height: $grid-min-height;
+    font-family: 'Nunito-regular', sans-serif;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
