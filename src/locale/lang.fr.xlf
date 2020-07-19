@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="e238b39d79927a0da1605de32524202a1fd1f7e6" datatype="html">
+        <source>Oops! Page Not Be Found</source>
+        <target>Oops! Page Introuvable </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/_components/not-found/not-found.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">Page not found for this sample</note>
+        <note priority="1" from="meaning">not found header</note>
+      </trans-unit>
+      <trans-unit id="abb136d21cc921c10a02e64bbf1a1beeabc56531" datatype="html">
+        <source>Sorry but the page you are looking for does not exist, have been removed. name changed or is temporarily unavailable</source>
+        <target>Désolé mais la page que vous recherchez n'existe pas. Elle peut-être été supprimée, modifié ou est temporairement indisponible</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/_components/not-found/not-found.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b2aa8c9b15d5ed51993422a2491ee3251e34061b" datatype="html">
+        <source>Back to homepage</source>
+        <target>Retour à la page d'accueil</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/_components/not-found/not-found.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
