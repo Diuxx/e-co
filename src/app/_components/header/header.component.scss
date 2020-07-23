@@ -1,0 +1,187 @@
+// global scss
+@import '../../../assets/global.scss';
+
+// https://medium.com/@arieldi/bref-voici-comment-%C3%A9crire-du-css-maintenable-et-%C3%A9volutif-comment-nommer-ses-class-css-cbe4b3437b49
+
+/** header container */
+$header-container-height: 50px ;
+
+/** header shop icon size */
+$header-shop-width: 25px ;
+$header-shop-height: 25px ;
+
+/** flags size */
+$flag-width: 20px ;
+$flag-height: 19px ;
+
+/** delimiter height */
+$header-delimiter-height: 30px ;
+
+/** colors */
+$header-menu-color: $dark-grey ;
+$header-menu-color-hover: $grey ;
+
+
+/** shop icon */
+.shop-icon {
+    background: url(../../../assets/imgs/shopping-bag.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: $header-shop-width;
+    height: $header-shop-height;
+    align-self: center;
+    position: relative;
+}
+
+.shop-icon:hover {
+    background: url(../../../assets/imgs/shopping-bag-colored.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: $header-shop-width;
+    height: $header-shop-height;
+    align-self: center;
+    cursor: pointer;
+}
+
+/** elimiter */
+.delim {
+    width: 1px;
+    height: $header-delimiter-height;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: $grey-light;
+    align-self: center;
+}
+
+/** header */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/** container */
+.header-container {
+    // border: 1px solid black;
+    height: $header-container-height;
+    padding: 0px !important;
+    justify-content: center;
+    padding: auto;
+    width: 80%;
+}
+
+/** menu */
+.menu-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-weight: 600;
+    width: auto;
+    li {
+        float: left;
+        a {
+            display: block;
+            color: $header-menu-color;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        a:hover {
+            color: $header-menu-color-hover;
+        }
+    }
+}
+
+.login-container {
+    text-align: center;
+    font-weight: 600;
+    align-self: center;
+    a {
+        color: $header-menu-color;
+        text-decoration: none;
+        display: block;
+    }
+    a:hover {
+        color: $header-menu-color-hover;
+    }
+}
+
+/** app name part */
+.app-name {
+    text-align: center;
+    align-self: center;
+    font-weight: 700;
+    font-size: 18px;
+    height: fit-content;
+}
+
+/** flag part */
+
+.flag-fr {
+    background: url(../../../assets/imgs/flags/france.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: $flag-width;
+    height: $flag-height;
+}
+
+.flag-us {
+    background: url(../../../assets/imgs/flags/united-states.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: $flag-width;
+    height: $flag-height;
+}
+
+
+.item-count {
+    background-color: $red;
+    color: white;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 200;
+    font-size: 12px;
+    padding-top: 2px;
+    opacity: 0.9;
+}
+
+/************************************************************/
+/* DROPDOWN
+/************************************************************/
+
+.lang {
+    height: fit-content;
+    margin-left: 20px;
+    align-self: center;
+}
+
+/** dropdown item & label */
+:host ::ng-deep .ui-dropdown .ui-dropdown-label,
+:host ::ng-deep .ui-dropdown-panel .ui-dropdown-item {
+    display: flex;
+}
+
+/** dropdown on item selected */
+:host ::ng-deep .lang .ui-dropdown-panel .ui-dropdown-items .ui-dropdown-item.ui-state-highlight, 
+:host ::ng-deep .lang .ui-dropdown-panel .ui-dropdown-items .ui-dropdown-item-group.ui-state-highlight {
+    background-color: $green-light;
+}
+
+:host ::ng-deep .lang .ui-dropdown {
+    border: none;
+    min-width: fit-content;
+}
+
+:host ::ng-deep .lang .ui-dropdown:not(.ui-state-disabled).ui-state-focus {
+    box-shadow: none;
+}

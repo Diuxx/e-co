@@ -1,6 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgModule } from '@angular/core';
+import { NgModule }      from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule }   from '@angular/forms';
 
 import { AppRoutingModule } from './_routing/app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,20 +13,26 @@ import { MenuItem } from 'primeng/api';                  //api3
 // components
 import { NotFoundComponent } from './_components/not-found/not-found.component';
 import { HomeComponent } from './_components/home/home.component';
+import { HeaderComponent } from './_components/header/header.component';
 import { PathResolveService } from './_services/pathResolve.service';
 
-// 
+// translate
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+
+// primeng
+import { DropdownModule } from 'primeng/dropdown';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    HeaderComponent,
     NotFoundComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     HttpClientModule,
     TranslateModule.forRoot({
@@ -37,7 +44,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     }),
     BrowserAnimationsModule,
     AppRoutingModule,
-    AccordionModule
+    AccordionModule,
+    DropdownModule
   ],
   providers: [PathResolveService],
   bootstrap: [AppComponent]
