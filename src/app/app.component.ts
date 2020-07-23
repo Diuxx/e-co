@@ -41,6 +41,7 @@ export class AppComponent implements OnInit {
 
   /**
    * https://www.positronx.io/angular-internationalization-i18n-with-ngx-translate-tutorial/
+   * https://github.com/ngx-translate/core
    * manage application current langage
    */
   private manageLang(): void {
