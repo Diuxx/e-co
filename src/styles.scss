@@ -16,14 +16,28 @@
          url('./assets/fonts/nunito/nunito-v13-latin-regular.svg#Nunito') format('svg'); /* Legacy iOS */
 }
 
+/* quicksand-regular - latin */
+@font-face {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/quicksand/quicksand-v21-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Quicksand Regular'), local('Quicksand-Regular'),
+         url('./assets/fonts/quicksand/quicksand-v21-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./assets/fonts/quicksand/quicksand-v21-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./assets/fonts/quicksand/quicksand-v21-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('./assets/fonts/quicksand/quicksand-v21-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./assets/fonts/quicksand/quicksand-v21-latin-regular.svg#Quicksand') format('svg'); /* Legacy iOS */
+}
+
 /** gloabl region */
 * {
-    font-family: 'Nunito', sans-serif;
+    // font-family: 'Quicksand', sans-serif;
 }
 
 /** html region */
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     margin: 0 8px 0 8px;
 }
 

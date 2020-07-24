@@ -78,7 +78,9 @@ $header-menu-color-hover: $grey ;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    font-weight: 600;
+    font-size: 0.975rem;
+    font-weight: 500;
+    text-transform: uppercase;
     width: auto;
     li {
         float: left;
@@ -97,7 +99,9 @@ $header-menu-color-hover: $grey ;
 
 .login-container {
     text-align: center;
-    font-weight: 600;
+    font-size: 0.975rem;
+    font-weight: 500;
+    text-transform: uppercase;
     align-self: center;
     a {
         color: $header-menu-color;
@@ -161,7 +165,7 @@ $header-menu-color-hover: $grey ;
 
 .lang {
     height: fit-content;
-    margin-left: 20px;
+    margin-left: 30px;
     align-self: center;
 }
 

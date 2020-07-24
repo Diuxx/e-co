@@ -24,7 +24,7 @@
       </div>   
       <i class="delim"></i>
       <div class="shop-icon" (click)="shoppingPage()">
-        <span class="item-count" *ngIf="article_count > 0">{{ article_count }}</span>
+        <span class="item-count disable-select" *ngIf="article_count > 0">{{ article_count }}</span>
       </div>
       <div class="lang">
         <p-dropdown [options]="langs"

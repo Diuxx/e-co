@@ -5,9 +5,9 @@
         "notfound-back": "Back to homepage"
     },
     "header": {
-        "deals-title": "Today's Deals",
-        "discount-title": "Discount",
-        "about-title": "About",
+        "deals-title": "TODAY'S DEALS",
+        "discount-title": "DISCOUNT",
+        "about-title": "ABOUT",
         "login-title": "LOGIN"
     }
 }
