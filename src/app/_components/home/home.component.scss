@@ -1,3 +1,96 @@
 // global scss
 @import '../../../assets/global.scss';
 
+
+/** colors */
+$tabPanel-color: $dark-grey ;
+$tabPanel-color-hover: $grey ;
+
+
+
+.container {
+    margin-top: 55px;
+    min-height: 200px;
+    padding: 0 30px 0 30px;
+}
+
+
+
+:host ::ng-deep .article-tabView .ui-tabview .ui-tabview-panels {
+    border: none;
+}
+
+
+
+/******************************************************
+/* TAB VIEW HEADER
+/*****************************************************/
+
+:host ::ng-deep .article-tabView .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active,
+:host ::ng-deep .article-tabView .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active,
+:host ::ng-deep .article-tabView .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active,
+:host ::ng-deep .article-tabView .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active {
+    background: none;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid $tabPanel-color-hover;
+    a {
+        color: $tabPanel-color;
+        font-weight: 700;
+        font-size: 0.875rem;
+        text-transform: uppercase;
+    }
+}
+
+:host ::ng-deep .article-tabView .ui-tabview.ui-tabview-top .ui-tabview-nav li, 
+:host ::ng-deep .article-tabView .ui-tabview.ui-tabview-bottom .ui-tabview-nav li,
+:host ::ng-deep .article-tabView .ui-tabview.ui-tabview-left .ui-tabview-nav li,
+:host ::ng-deep .article-tabView .ui-tabview.ui-tabview-right .ui-tabview-nav li {
+    background: none;
+    color: black;
+    a {
+        font-weight: 400;
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        user-select: none;
+    }
+}
+
+:host ::ng-deep .article-tabView .ui-tabview .ui-tabview-nav li {
+    position: static;
+}
+
+// focus box shadow
+:host ::ng-deep .article-tabView .ui-tabview.ui-tabview-top .ui-tabview-nav li:focus,
+:host ::ng-deep .article-tabView .ui-tabview.ui-tabview-bottom .ui-tabview-nav li:focus,
+:host ::ng-deep .article-tabView .ui-tabview.ui-tabview-left .ui-tabview-nav li:focus,
+:host ::ng-deep .article-tabView .ui-tabview.ui-tabview-right .ui-tabview-nav li:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: none;
+}
+
+:host ::ng-deep .article-tabView .ui-tabview.ui-tabview-top .ui-tabview-nav li:hover,
+:host ::ng-deep .article-tabView .ui-tabview.ui-tabview-bottom .ui-tabview-nav li:hover,
+:host ::ng-deep .article-tabView .ui-tabview.ui-tabview-left .ui-tabview-nav li:hover,
+:host ::ng-deep .article-tabView .ui-tabview.ui-tabview-right .ui-tabview-nav li:hover {
+    background: none;
+}
+
+:host ::ng-deep .article-tabView .ui-tabview.ui-tabview-top .ui-tabview-nav li {
+    background: none;
+    border: none;
+}
+
+:host ::ng-deep .article-tabView .ui-tabview.ui-tabview-top .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover,
+:host ::ng-deep .article-tabView .ui-tabview.ui-tabview-bottom .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover,
+:host ::ng-deep .article-tabView .ui-tabview.ui-tabview-left .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover,
+:host ::ng-deep .article-tabView .ui-tabview.ui-tabview-right .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover {
+    background: none;
+    border: none;
+    border-bottom: 1px solid $tabPanel-color-hover;
+    a {
+        color: $tabPanel-color-hover;
+    }
+  }

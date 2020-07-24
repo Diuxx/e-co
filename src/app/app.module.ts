@@ -23,6 +23,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 // primeng
 import { DropdownModule } from 'primeng/dropdown';
+import { TabViewModule } from 'primeng/tabview';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { DropdownModule } from 'primeng/dropdown';
     BrowserAnimationsModule,
     AppRoutingModule,
     AccordionModule,
-    DropdownModule
+    DropdownModule,
+    TabViewModule
   ],
   providers: [PathResolveService],
   bootstrap: [AppComponent]
