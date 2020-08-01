@@ -1,0 +1,18 @@
+
+<div class="article" (onclick)="goToArticle(article)">
+  <img [src]="article.images[0]" alt="">
+  <div class="article-info">
+    <div class="title">
+      {{ (article.title.length > 20) ? (article.title | slice:0:20)+'...': (article.title) }}
+    </div>
+    <div class="price">
+      {{ article.prices.original }} &#36;
+    </div>
+    <div class="real-price" *ngIf="article?.prices?.original">
+      {{ article.prices.original }} &#36;
+    </div>
+  </div>
+  <div class="reduction">
+    <span>- 25%</span>
+  </div>
+</div>

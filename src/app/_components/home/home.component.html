@@ -1,18 +1,35 @@
 <div class="">
-  <app-header style="margin-bottom: 55px;"></app-header>
+  <app-header></app-header>
 
   <!-- home container -->
   <div class="container">
-    <p-tabView class="article-tabView" style="margin-top: 55px;">
+    <p-tabView class="article-tabView">
       <p-tabPanel header="ALL">
-          Content 1
+        <div class="article-container">
+          <!-- [ngClass]="{'margin-right': (i+1) % 5 !== 0}" -->
+          <div class="article" *ngFor="let article of articles;  let i = index">
+            <a href="">
+
+            </a>
+
+
+            <app-article [article]="article"></app-article>
+          </div>
+        </div> 
       </p-tabPanel>
-      <p-tabPanel header="T-SHIRT">
-          Content 2
+      <p-tabPanel header="TOP">
+        Content 1
       </p-tabPanel>
-      <p-tabPanel header="POLO">
-          Content 3
+      <p-tabPanel header="RETRO">
+        Content 3
+      </p-tabPanel>
+      <p-tabPanel header="ANIME">
+        Content 2
+      </p-tabPanel>
+      <p-tabPanel header="SOBRE">
+        Content 3
       </p-tabPanel>
     </p-tabView>
   </div>
+  <app-avis></app-avis>
 </div>

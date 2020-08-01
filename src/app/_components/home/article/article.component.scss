@@ -1,0 +1,75 @@
+// global scss
+@import '../../../../assets/global.scss';
+
+.article {
+    //height: calc(100vw / 5);
+    height: 330px;
+    width: 100%;
+    padding: 3px;
+    cursor: pointer;
+    position: relative;
+    background-color: white;
+    border-radius: 25px;
+    img {
+        border-radius: 25px;
+        width: 100%;
+        height: calc(100% - 25%);
+    }
+}
+
+.article .reduction {
+    position: absolute;
+    background-color: $red;
+    font-size: 0.675rem;
+    font-size: 75%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    min-width: 35px;
+    width: 15%;
+    height: 10%;
+    border-radius: 20px;
+    bottom: 25px;
+    right: 10px;
+    span {
+        width: fit-content;
+        align-self: center;
+    }
+}
+
+.article-info {
+    padding: 0 4px 0 4px;
+    height: 25%;
+    overflow: hidden;
+    // font-size: 0.875rem;
+    text-transform: uppercase;
+    user-select: none;
+    .price {
+        font-weight: 600;
+        // font-size: 0.825rem;
+        font-size: 85%;
+        width: fit-content;
+        height: fit-content;
+        align-self: center;
+    }
+    .title {
+        font-weight: 500;
+        //font-size: 0.675rem;
+        font-size: 70%;
+        color: $dark-grey;
+        width: 100%;
+        height: fit-content;
+        align-self: center;
+    }
+}
+
+.real-price {
+    text-decoration: line-through;
+    font-size: 0.825rem;
+    color: $grey;
+    padding-top: 3px;
+    //padding-left: 3px;
+}
+
+
+// width: calc;

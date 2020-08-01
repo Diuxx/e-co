@@ -4,7 +4,6 @@ import { Meta, Title } from '@angular/platform-browser';
 // i18n
 import { TranslateService } from '@ngx-translate/core';
 
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

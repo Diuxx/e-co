@@ -1,26 +1,65 @@
 // global scss
 @import '../../../assets/global.scss';
 
-
 /** colors */
 $tabPanel-color: $dark-grey ;
 $tabPanel-color-hover: $grey ;
 
-
+/** size */
+$home-height: calc(100vh - 110px);
+$article-tabView: calc((100vw / 5) * 2 + (3 * 6px));
 
 .container {
     margin-top: 55px;
-    min-height: 200px;
+    height: fit-content;
+    overflow: hidden;
     padding: 0 30px 0 30px;
 }
 
+.article-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    padding: 7px 0 0 7px;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
 
+/*.article {
+    width: calc(100% / 5 - 7px);
+    height: fit-content;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    @media only screen and (max-width: 1124px) {
+        width: calc(100% / 4 - 7px);
+    }
+    @media only screen and (max-width: 800px) {
+        width: calc(100% / 2 - 7px);
+    }
+    @media only screen and (max-width: 500px) {
+        width: calc(100% - 7px);
+    }
+}*/
+
+.margin-right {
+    margin-right: 7px;
+}
+
+.article-tabView {
+    margin-top: 55px;
+}
 
 :host ::ng-deep .article-tabView .ui-tabview .ui-tabview-panels {
     border: none;
+    margin-top: 10px;
 }
 
-
+:host ::ng-deep .article-tabView .ui-tabview .ui-tabview-panels .ui-tabview-panel {
+    //height: $article-tabView;
+    height: fit-content;
+}
 
 /******************************************************
 /* TAB VIEW HEADER
